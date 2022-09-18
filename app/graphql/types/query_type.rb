@@ -15,5 +15,6 @@ module Types
     end
     field :golfs, resolver: Queries::Golfs
     field :golf, resolver: Queries::Golf
+    field :current_user, resolver: Queries::CurrentUser
   end
 end
