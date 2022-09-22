@@ -1,10 +1,11 @@
 module Mutations
-    class DeleteGolf < Mutations::BaseMutation
+    class DeleteGolf < Mutations::AuthMutation
       argument :id, ID, required: true
   
       field :id, ID, null: false
   
       def resolve(id:)
+        user = context[:current_user]
         Golf.find(id).delete
   
         { id: id }
