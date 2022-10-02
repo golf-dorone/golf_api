@@ -10,5 +10,6 @@ module Types
     field :update_golf, mutation: Mutations::UpdateGolf
     field :delete_golf, mutation: Mutations::DeleteGolf
     # field :auth_mutation, mutation: Mutations::AuthMutation
+    field :create_inquiry, mutation: Mutations::CreateInquiry
   end
 end

@@ -16,5 +16,7 @@ module Types
     field :golfs, resolver: Queries::Golfs
     field :golf, resolver: Queries::Golf
     field :current_user, resolver: Queries::CurrentUser
+    field :inquiries, resolver: Queries::Inquiries
+    field :inquiry, resolver: Queries::Inquiry
   end
 end
