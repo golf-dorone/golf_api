@@ -17,4 +17,4 @@ ENTRYPOINT ["entrypoint.sh"]
 
 EXPOSE 3000
 
-CMD ["/bin/sh", "-c", "bundle exec rails db:drop && bundle exec rails db:create && bundle exec rails db:migrate && bundle exec unicorn -p 3000 -c /app/config/unicorn.rb -E production"]
+CMD ["/bin/sh", "-c", "bundle exec rails db:create && bundle exec rails db:migrate && bundle exec unicorn -p 3000 -c /app/config/unicorn.rb -E production"]

@@ -26,6 +26,6 @@ production:
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 20 } %>
   host: <%= ENV['DB_HOST'] %>
   socket: /var/lib/mysql/mysql.sock
-  database: golf_api_production_2
+  database: golf_api_production_3
   username: <%= ENV['DB_USERNAME'] %>
   password: <%= ENV['DB_PASSWORD'] %>
