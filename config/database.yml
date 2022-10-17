@@ -23,7 +23,7 @@ test:
 production:
   adapter: mysql2
   encoding: utf8mb4
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 20 } %>
   host: <%= ENV['DB_HOST'] %>
   socket: /var/lib/mysql/mysql.sock
   database: golf_api_production_2
